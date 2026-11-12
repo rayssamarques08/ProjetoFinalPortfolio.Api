@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
+using ProjetoFinalPortfolio.Api.Models;
 namespace ProjetoFinalPortfolio.Api.Data
 {
     public class AppDbContext : DbContext
@@ -9,9 +9,8 @@ namespace ProjetoFinalPortfolio.Api.Data
 
         }
 
-        public DbSet<>  { get; set; }
-        public DbSet<>  { get; set; }
-        public DbSet<>  { get; set; }
-        public DbSet<>  { get; set; }
+        public DbSet<Turma> Turmas { get; set; }
+        public DbSet<Aluno> Alunos { get; set; }
+        public DbSet<Projeto> Projetos { get; set; }
     }
 }
